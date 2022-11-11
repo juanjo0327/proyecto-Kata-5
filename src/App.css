@@ -1,0 +1,69 @@
+body{
+  background-image: url(../public/FondoNetflix.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body::before{
+    content:'';
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-link {
+  color: var(--clr-dark-pink);
+  text-decoration: none;
+}
+
+.nav-item{
+  width: 250px;
+  text-align: center;
+  height: 55px;
+  color: yellow;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.nav-item:hover{
+  cursor: pointer;
+  background-color: green;
+}
+
+.inicio{
+  background-color: deepskyblue;
+}
+
+.series{
+  background-color: royalblue;
+}
+
+.peliculas{
+  background-color: rebeccapurple;
+}
+
+.nav-itemNetflix{
+  width: 250px;
+  text-align: center;
+}
+
+.image-container {
+  background-image: url(../public/logoNetflix.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+}
