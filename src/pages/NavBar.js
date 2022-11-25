@@ -1,4 +1,5 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import '../estilosInicio.css'
 
 function NavBar() {
     return (
@@ -6,18 +7,22 @@ function NavBar() {
        <nav>
           <ul className="nav-items">
               <li className="nav-itemNetflix">
-                <img className="image-container"></img>
+                <img className="image-container" />
               </li>
               <li className="nav-item inicio">
-                <a href="#" className="nav-item nav-link">
-                    <p>Peliculas Top</p>
-                </a>  
+                <Link className="nav-item nav-link" to="/">
+                      <p>Peliculas Top</p>
+                </Link> 
               </li>
               <li className="nav-item series">
-                <a href="#" className="nav-link"><p>Series</p></a>  
+                <Link className="nav-item nav-link" to="/series">
+                      <p>Categorias</p>
+                </Link> 
               </li>
               <li className="nav-item peliculas">
-                <a href="#" className="nav-link"><p>Peliculas</p></a>  
+                <Link className="nav-item nav-link" to="/busquedaActor">
+                      <p>Actor/Actriz</p>
+                </Link>
               </li>
           </ul>
        </nav>

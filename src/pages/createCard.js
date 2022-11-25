@@ -1,28 +1,9 @@
-import React, {useEffect, useState}  from 'react';
+import React, {useState}  from 'react';
 import Card from "../components/Card";
 import ListCard from "../components/ListCard";
 import '../estilosInicio.css';
 
 const API_KEY = "2dbc6cfb9f0b204e19642c36f4bd9762";
-// const URL = 'http://localhost:4000';
-
-
-// const arrayColores = [
-//     {
-//         color: 'rojo',
-//         pelicula1: 200
-//     },
-//     {
-//         color: 'azul',
-//         pelicula1: 200
-//     },
-//     {
-//         color: 'azul',
-//         pelicula1: 100
-//     }
-// ];
-
-
 
 function CreateCard() {
 
